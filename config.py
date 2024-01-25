@@ -39,7 +39,13 @@ UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 DB_URI = os.environ.get("DATABASE_URL", "postgres://euymdfzi:miFOv9EsEqCJmn7aRQ1pWW1IG5Eu2mH7@tiny.db.elephantsql.com/euymdfzi")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB = {"-1002035236535", "-1001526366621", "-1001898026780", "-1001916251589"}
+FORCE_SUB1 = int(os.environ.get("FORCE_SUB1", "-1002035236535"))
+FORCE_SUB2 = int(os.environ.get("FORCE_SUB2", "-1001526366621"))
+FORCE_SUB3 = int(os.environ.get("FORCE_SUB3", "-1001898026780"))
+FORCE_SUB4 = int(os.environ.get("FORCE_SUB4", "-1001916251589"))
+FORCE_SUB5 = int(os.environ.get("FORCE_SUB5", "0"))
+FORCE_SUB6 = int(os.environ.get("FORCE_SUB6", "0"))
+FORCE_SUB = {}
 FORCE_SUB_COUNTER = 1
 while True:
     key = f"FORCE_SUB{FORCE_SUB_COUNTER}"
@@ -50,10 +56,10 @@ while True:
     FORCE_SUB_COUNTER += 1
 
 # Berapa baris maunya
-BUTTONS_PER_ROW = int(os.environ.get("BUTTONS_PER_ROW", "6"))
+BUTTONS_PER_ROW = int(os.environ.get("BUTTONS_PER_ROW", "2"))
 
 # Tulisan joinnya mau gimana
-BUTTONS_JOIN_TEXT = os.environ.get("BUTTONS_JOIN_TEXT", "ᴊᴏɪɴ")
+BUTTONS_JOIN_TEXT = os.environ.get("BUTTONS_JOIN_TEXT", "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ")
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
