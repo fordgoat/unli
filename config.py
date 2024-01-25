@@ -40,14 +40,14 @@ DB_URI = os.environ.get("DATABASE_URL", "postgres://euymdfzi:miFOv9EsEqCJmn7aRQ1
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
 FORCE_SUB = {"-1002035236535", "-1001526366621", "-1001898026780", "-1001916251589"}
-FORCE_SUB_COUNTER = 4
+FORCE_SUB_COUNTER = 1
 while True:
     key = f"FORCE_SUB{FORCE_SUB_COUNTER}"
     value = os.environ.get(key)
     if value is None:
         break
     FORCE_SUB[FORCE_SUB_COUNTER] = int(value)
-    FORCE_SUB_COUNTER += 4
+    FORCE_SUB_COUNTER += 1
 
 # Berapa baris maunya
 BUTTONS_PER_ROW = int(os.environ.get("BUTTONS_PER_ROW", "6"))
