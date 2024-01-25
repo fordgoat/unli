@@ -56,7 +56,7 @@ while True:
     FORCE_SUB_COUNTER += 1
 
 # Berapa baris maunya
-BUTTONS_PER_ROW = int(os.environ.get("BUTTONS_PER_ROW", "2"))
+BUTTONS_PER_ROW = int(os.environ.get("BUTTONS_PER_ROW", "7"))
 
 # Tulisan joinnya mau gimana
 BUTTONS_JOIN_TEXT = os.environ.get("BUTTONS_JOIN_TEXT", "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ")
@@ -87,7 +87,7 @@ DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "Fal
 
 # Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
 # Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
-ADMINS.extend((844432220, 1250450587, 1750080384, 182990552))
+ADMINS.extend((844432220, 1250450587, 1750080384, 182990552, 1948147616))
 
 
 LOG_FILE_NAME = "logs.txt"
