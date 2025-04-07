@@ -11,19 +11,19 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6980611537:AAF0ZPhgsnqAE0CzpbM9lc_9vF1Px7D4SMg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "10064016"))
+APP_ID = int(os.environ.get("APP_ID", "29486311"))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "b9ca5d9a6c625a890af28db4adf50cf4")
+API_HASH = os.environ.get("API_HASH", "ffdc688dc4eee8d2585cb24155188432")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002027693771"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002073588527"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "Arabnihnge")
+OWNER = os.environ.get("OWNER", "vilancegod")
 
 # Protect Content
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
@@ -39,11 +39,11 @@ UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 DB_URI = os.environ.get("DATABASE_URL", "postgres://euymdfzi:miFOv9EsEqCJmn7aRQ1pWW1IG5Eu2mH7@tiny.db.elephantsql.com/euymdfzi")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB1 = int(os.environ.get("FORCE_SUB1", "-1002035236535"))
-FORCE_SUB2 = int(os.environ.get("FORCE_SUB2", "-1001526366621"))
-FORCE_SUB3 = int(os.environ.get("FORCE_SUB3", "-1001898026780"))
-FORCE_SUB4 = int(os.environ.get("FORCE_SUB4", "-1001916251589"))
-FORCE_SUB5 = int(os.environ.get("FORCE_SUB5", "0"))
+FORCE_SUB1 = int(os.environ.get("FORCE_SUB1", "-1001721745890"))
+FORCE_SUB2 = int(os.environ.get("FORCE_SUB2", "-1002320116756"))
+FORCE_SUB3 = int(os.environ.get("FORCE_SUB3", "-1002398954973"))
+FORCE_SUB4 = int(os.environ.get("FORCE_SUB4", "-1002065151503"))
+FORCE_SUB5 = int(os.environ.get("FORCE_SUB5", "-1001979450020"))
 FORCE_SUB6 = int(os.environ.get("FORCE_SUB6", "0"))
 FORCE_SUB = {}
 FORCE_SUB_COUNTER = 1
